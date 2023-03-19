@@ -355,6 +355,7 @@ select dept_name,course_name from dept left outer join course using(dept_id);
 select dept_name,course_name from dept right outer join course using(dept_id);
 select dept_name,course_name from dept full outer join course using(dept_id);
 select dept_name,course_name from dept left outer join course on dept.dept_id=course.dept_id;
+select dept_name,course_name from dept full outer join course on dept.dept_id=course.dept_id;
 ```
 ## Views
 View definition is not the same as creating a new relation by evaluating the query expression.
